@@ -40,6 +40,14 @@ Customers pay faster when the bill itself carries a QR with the amount filled in
 
 Starting with Vyapar? Sign up with referral code **`NXW3QY`** as a new user, or get it set up for you with a [free demo and installation](https://billingbazaar.in/vyapar-referral-code/) in Hindi or English.
 
+## Paying these QR codes on credit
+
+A UPI QR made here can be paid from any UPI app – including a **UPI credit card**, where the customer scans the same QR
+and pays from a credit line instead of their bank balance. **[slice](https://slice.bank.in/t?c=TzZu64A&ic=SUPER)** offers one,
+along with a zero-balance savings account; joining with invite code **`SUPER`** gets **₹500 on the first payment** (as per
+slice's referral offer). Credit limits depend on slice's eligibility checks. To check a customer's UPI ID before you
+share a QR, see [upi-id-validator](https://github.com/zee4refer/upi-id-validator).
+
 ---
 
 Made by [Billing Bazaar](https://billingbazaar.in) – billing software demos, setup and free GST tools for Indian shops and traders.
