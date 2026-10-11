@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UPI QR Code Generator – Free</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<style>body{font-family:system-ui,sans-serif;max-width:520px;margin:40px auto;padding:0 16px;color:#1b1b18}
+label{display:block;margin:12px 0 4px}input{width:100%;padding:10px;font-size:1rem;border:1px solid #ccc;border-radius:8px;box-sizing:border-box}
+#qr{margin:20px 0;text-align:center}#qr svg{width:240px;height:240px}code{word-break:break-all}a{color:#1d6b47}</style></head><body>
+<h1>UPI QR code generator</h1>
+<label>UPI ID<input id="pa" value="yourshop@okbank"></label>
+<label>Payee name<input id="pn" value="Your Shop"></label>
+<label>Amount (₹, optional)<input id="am" type="number"></label>
+<label>Note (optional)<input id="tn"></label>
+<div id="qr"></div><p><code id="link"></code></p>
+<p>Printable "Scan &amp; Pay" card: <a href="https://billingbazaar.in/tools/upi-qr-code-generator/">billingbazaar.in/tools/upi-qr-code-generator</a> ·
+Vyapar referral code <b>NXW3QY</b></p>
+<script>var module={};</script><script src="upi.js"></script>
+<script>var U=module.exports;function run(){try{var l=U.upiLink({pa:pa.value,pn:pn.value,am:am.value,tn:tn.value});
+var q=qrcode(0,'M');q.addData(l);q.make();qr.innerHTML=q.createSvgTag({scalable:true,margin:2});link.textContent=l;}
+catch(e){qr.textContent=e.message;link.textContent='';}}
+['pa','pn','am','tn'].forEach(function(i){document.getElementById(i).addEventListener('input',run)});run();</script>
+</body></html>
